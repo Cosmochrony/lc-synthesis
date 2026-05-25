@@ -1,0 +1,439 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{doi}
+\usepackage{hyperref}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\newcommand{\Sym}{\mathrm{Sym}}
+\newcommand{\SO}{\mathrm{SO}}
+
+\title{The Lorentz-Capacity Sub-Programme\\[4pt]
+\normalsize\itshape Projective Origin of the Lorentz Factor in the Cosmochrony Programme}
+\author{J\'er\^ome Beau\\[2pt]
+\small Independent Researcher\\
+\small \texttt{jerome.beau@cosmochrony.org}}
+\date{2026}
+
+\begin{document}
+
+  \maketitle
+
+  \begin{abstract}
+    The Lorentz-capacity sub-programme answers a specific question in the Cosmochrony
+    framework: where does the Lorentz factor $\gamma$ come from, if spacetime geometry is not
+    assumed as fundamental?
+    The answer is that $\gamma$ is not introduced as a kinematic postulate.
+    It is reconstructed from the bounded Born--Infeld capacity budget of admissible projection,
+    then lifted to the observer-transform structure of special relativity through the effective
+    Lorentzian co-metric established in the geometric branch of the programme.
+
+    The completed chain is
+    \begin{align*}
+      &\text{BI budget}
+      \;\to\;
+      F^\tau = \tfrac{1}{\gamma}
+      \;\to\;
+      g^{\mu\nu} = 2\eta^{\mu\nu}
+      \;\to\;
+      \Lambda(\beta)\\
+      &\qquad\to\;
+      R(x)^2 = 1-\epsilon(x)
+      \;\to\;
+      \text{finite-}q\text{ domain.}
+    \end{align*}
+    Six papers constitute the sub-programme.
+    Paper~\cite{Beau2026n} (LorCap) identifies the projective mobility parameter.
+    Paper~\cite{Beau2026tp} (TempProj) constructs the temporal residual map $F^\tau_n =
+    \sqrt{1-B_n^2}$.
+    Paper~\cite{Beau2026lco2} (LCII) extends the construction to the fibrewise non-homogeneous
+    regime.
+    Paper~\cite{Beau2026lco1} (LC-O1) reconstructs Lorentz transformations and length
+    contraction.
+    Paper~\cite{Beau2026lco2o1} (LC-O2-O1) closes the local capacity--metric bridge without
+    importing the Einstein equation.
+    Paper~\cite{Beau2026lco3} (LC-O3) identifies the exact finite-$q$ domain of validity of the
+    Carnot parabolic identification.
+
+    The result is not a new dynamical principle.
+    It is a synthesis showing that time dilation, the light cone, Lorentz boosts, length
+    contraction, local gravitational capacity lapse, and finite-$q$ saturation corrections all
+    follow from the same admissibility-capacity structure, once the Q5b--Q11 effective metric
+    closure has been established.
+  \end{abstract}
+
+  \medskip
+  \noindent\textbf{Keywords.}
+  Lorentz factor; projective temporal ordering; Born--Infeld capacity; temporal residual map;
+  Lorentz transformation; length contraction; capacity--metric bridge; gravitational time
+  dilation; finite-$q$ corrections; Cosmochrony.
+
+  \tableofcontents
+
+  \newpage
+  \section{Motivation}
+    \label{sec:motivation}
+
+    The Lorentz factor is usually introduced as part of the kinematics of special relativity,
+    taken as foundational.
+    In the Cosmochrony framework this is not satisfactory: the Lorentzian metric is itself an
+    effective object reconstructed from admissible non-injective projection~\cite{Beau2026q5b,Beau2026q11}.
+    The structural question is therefore: where does $\gamma = (1-\beta^2)^{-1/2}$ come from?
+
+    The Lorentz-capacity sub-programme answers this by separating two roles that are fused in
+    the standard presentation.
+    First, the Born--Infeld capacity budget~\cite{Beau2026c,Beau2026m} determines the
+    admissible split between temporal and spatial projective capacity.
+    Second, the Q5b--Q11 geometric closure supplies the effective Lorentzian interval on which
+    observer transformations act as isometries.
+
+    The capacity relation
+    \[
+      (F^\tau)^2 + \beta^2 = 1
+    \]
+    is a Euclidean norm constraint in capacity space.
+    It is not the Minkowski interval.
+    Its role is to determine
+    \[
+      F^\tau = \sqrt{1-\beta^2} = \frac{1}{\gamma}.
+    \]
+    The Lorentzian interval is supplied separately by
+    \[
+      g^{\mu\nu} = 2\eta^{\mu\nu}.
+    \]
+    The Lorentz group is therefore not the symmetry group of the capacity sphere.
+    It is the isometry group of the effective Lorentzian metric.
+    This distinction is the organising principle of the whole sub-programme.
+
+    The sub-programme also addresses two downstream questions.
+    In the non-homogeneous regime, a local occupancy field $\epsilon(x)$ reduces the local
+    residual temporal capacity; LC-O2-O1 closes the bridge $R(x)^2 = 1-\epsilon(x) =
+  -2g^{\tau\tau}(x)$ spectrally, without any use of the Einstein equation.
+    LC-O3 then establishes the exact finite-$q$ domain in which the Carnot parabolic
+    identification of the spatial load is valid.
+
+  \section{The Structural Chain}
+    \label{sec:chain}
+
+    Figure~\ref{fig:chain} displays the completed chain.
+
+    \begin{figure}[h]
+      \centering
+      \renewcommand{\arraystretch}{1.5}
+      \footnotesize
+      \begin{tabular}{ccccccccc}
+        BI budget & $\to$ & $F^\tau=1/\gamma$ & $\to$ & $g^{\mu\nu}=2\eta^{\mu\nu}$
+        & $\to$ & $\Lambda(\beta)$ & $\to$ & $R(x)^2=1-\epsilon(x)$\\
+        \cite{Beau2026c} & &
+        \cite{Beau2026n,Beau2026tp} & &
+        \cite{Beau2026q5b,Beau2026q11} & &
+        \cite{Beau2026lco1} & &
+        \cite{Beau2026lco2,Beau2026lco2o1}\\[6pt]
+        \multicolumn{7}{c}{} & $\to$ & finite-$q$ \\
+        \multicolumn{7}{c}{} & & \cite{Beau2026lco3}
+      \end{tabular}
+      \caption{The Lorentz-capacity chain.
+      Each arrow is closed by the paper(s) cited below it.
+      The capacity sphere (left) and the effective metric (centre) are independent inputs;
+      the Lorentz group acts on the metric, not on the sphere.}
+      \label{fig:chain}
+    \end{figure}
+
+    Each arrow has a distinct logical status.
+
+    \paragraph{BI budget to temporal residual.}
+      The bounded capacity relation fixes the residual temporal capacity once the spatial load
+      $\beta$ is known:
+      \[
+        F^\tau = \sqrt{1-\beta^2}.
+      \]
+      This is the projective origin of the Lorentz clock factor.
+      The constraint comes from the Born--Infeld admissibility budget~\cite{Beau2026c,Beau2026m};
+      its structural consequence for Lorentz mobility is established in~\cite{Beau2026n}.
+
+    \paragraph{Temporal residual to effective metric.}
+      The Q5b--Q11 closure~\cite{Beau2026q5b,Beau2026q11} supplies the homogeneous co-metric
+      $g^{\mu\nu} = 2\eta^{\mu\nu}$, with no free parameter.
+      The global factor $2$ is irrelevant for the isometry group.
+      This is the point at which Lorentzian geometry enters the chain.
+
+    \paragraph{Effective metric to Lorentz transformations.}
+      Once the metric is available, an inertial observer is a unit timelike splitting of the
+      effective interval.
+      The Lorentz boost $\Lambda(\beta)$ is the unique proper orthochronous isometry mapping one
+      splitting to another at capacity load $\beta$, established in~\cite{Beau2026lco1}.
+
+    \paragraph{Homogeneous capacity to local lapse.}
+      The non-homogeneous extension introduces a local occupancy $\epsilon(x)$ and a residual
+      capacity radius $R(x)^2 = 1-\epsilon(x)$, defined in~\cite{Beau2026lco2}.
+      Paper~\cite{Beau2026lco2o1} proves the equivalence $R(x)^2 = -2g^{\tau\tau}(x)$ from local
+      admissibility data, closing the bridge spectrally.
+
+    \paragraph{Finite-$q$ domain.}
+      The quadratic identity $B_n^2 + (F_n^\tau)^2 = 1$ is exact when $B_n$ is the exact torus
+      load.
+      Paper~\cite{Beau2026lco3} identifies the correction $\Delta_q(n) = 4m^2/q^2$ between the
+      exact torus count and the Carnot parabolic approximation, and establishes the domain $n \leq
+  R := (q-1)/2$ in which the approximation is valid.
+
+  \section{Paper-by-Paper Synthesis}
+  \label{sec:papers}
+
+  \subsection{LorCap: mobility from projective capacity~\texorpdfstring{\cite{Beau2026n}}{}}
+    \label{subsec:lorcap}
+
+    LorCap~\cite{Beau2026n} establishes the first link between the admissibility capacity budget
+    and relativistic mobility.
+    The spatial load is encoded by a projective capacity parameter, and the temporal residual is
+    interpreted as the clock-rate factor.
+    The central result is the identification of a capacity variable whose Lorentzian reading is
+    \[
+      F^\tau = \frac{1}{\gamma}.
+    \]
+    LorCap also establishes why the naive total residual is insufficient: the central coordinate
+    of the Heisenberg group contributes only a global phase, so the Lorentz factor must be
+    extracted from the temporally projected residual rather than from the raw total capacity.
+    The explicit construction of the temporal projection is completed by TempProj.
+
+  \subsection{TempProj: the temporal residual map~\texorpdfstring{\cite{Beau2026tp}}{}}
+    \label{subsec:temproj}
+
+    TempProj~\cite{Beau2026tp} constructs the temporal residual map as the unique positive
+    function compatible with three inputs: the Q5b--Q11 Lorentzian splitting, the Born--Infeld
+    unit capacity sphere, and the exact Weil filling law $\Sigma^{\mathrm{tot}}_n = 1-B_n$.
+    The result is
+    \[
+      P^{Q5b}_\tau\,\Sigma^{\mathrm{tot}}_n = \sqrt{1-B_n^2} = F^\tau_n.
+    \]
+    This closes time dilation ($d\tau/dn = F^\tau_n = 1/\gamma$) and the light cone
+    ($B_n = 1 \Rightarrow F^\tau_n = 0$).
+    TempProj thereby proves that the Lorentz factor is the temporal residual of a bounded
+    projective capacity budget.
+    The reconstruction of the full transformation between inertial observers is the role of
+    LC-O1.
+
+  \subsection{LCII: local fibrewise capacity lapse~\texorpdfstring{\cite{Beau2026lco2}}{}}
+    \label{subsec:lcii}
+
+    LCII~\cite{Beau2026lco2} extends the homogeneous construction to the non-homogeneous
+    fibrewise regime.
+    A local occupancy field $\epsilon(x)$ measures the fraction of projective capacity already
+    locked in the fibre over $x$.
+    The residual local capacity radius is
+    \[
+      R(x)^2 := 1-\epsilon(x).
+    \]
+    The fibrewise temporal map factorises as
+    \[
+      P^{Q5b}_{\tau,x}\,\Sigma^{\mathrm{tot}}(x,n)
+      = R(x)\,\sqrt{f(x,n)\bigl(2-f(x,n)\bigr)},
+    \]
+    giving a capacity-language account of gravitational time dilation: local occupancy reduces
+    the residual temporal capacity.
+    LCII introduces two parallel definitions of $R(x)$,
+    \[
+      R(x)^2 := 1-\epsilon(x), \qquad R(x)^2 := -2g^{\tau\tau}(x),
+    \]
+    whose analytic equivalence was left as an open bridge, closed by LC-O2-O1.
+
+  \subsection{LC-O1: Lorentz transformations and length contraction~\texorpdfstring{\cite{Beau2026lco1}}{}}
+    \label{subsec:lco1}
+
+    LC-O1~\cite{Beau2026lco1} closes the observer-transform part of the sub-programme.
+    The key conceptual clarification is that the Born--Infeld capacity sphere is not a
+    Lorentzian structure: it supplies $\beta$ and $1/\gamma$, while the Lorentzian metric is
+    supplied by Q5b--Q11.
+
+    An inertial observer is a future-directed unit timelike vector $u$ satisfying $\eta(u,u) =
+  -1$, together with its simultaneity hyperplane $\Sigma_u = \{X \mid \eta(X,u) = 0\}$.
+    The unique proper orthochronous isometry of $\eta$ mapping the rest splitting $u_0 =
+  \partial_\tau$ to the moving splitting
+    \[
+      u_\beta = \gamma(\partial_\tau + \beta\,\partial_x), \qquad \gamma = (1-\beta^2)^{-1/2},
+    \]
+    is the Lorentz boost
+    \[
+      \tau' = \gamma(\tau - \beta x), \qquad x' = \gamma(x - \beta\tau).
+    \]
+    Length contraction follows from measuring a rest interval on the moving simultaneity
+    hyperplane:
+    \[
+      \ell = \frac{\ell_0}{\gamma}.
+    \]
+    Thus LC-O1 shows that projective temporal ordering does not merely produce a scalar clock
+    factor.
+    Once the effective Lorentzian metric is reconstructed, the same capacity load $\beta$ fixes
+    the complete inertial transformation.
+
+  \subsection{LC-O2-O1: spectral closure of the capacity--metric bridge~\texorpdfstring{\cite{Beau2026lco2o1}}{}}
+    \label{subsec:lco2o1}
+
+    LC-O2-O1~\cite{Beau2026lco2o1} closes the non-homogeneous local bridge spectrally.
+    The key definition is that $\epsilon(x)$ is not an arbitrary scalar density but a quadratic
+    occupancy in the rank-three fibre sector $\Sym^2(V_\rho)$, normalised by the maximal
+    Born--Infeld capacity $\sigma_{\mathrm{max}} = c_\chi^2$.
+    The local admissibility-weight reduction lemma then gives
+    \[
+      A_\tau(x) = 2\bigl(1-\epsilon(x)\bigr),
+    \]
+    and the principal-symbol identification in the LCII normalisation gives
+    \[
+      g^{\tau\tau}(x) = -\frac{A_\tau(x)}{4}.
+    \]
+    Combining these two identities yields the closure
+    \[
+      R(x)^2 = 1-\epsilon(x) = -2g^{\tau\tau}(x).
+    \]
+    This is a local admissibility identity, not a gravitational field equation.
+    No Einstein equation is used.
+
+  \subsection{LC-O3: finite-$q$ domain of the Carnot identification~\texorpdfstring{\cite{Beau2026lco3}}{}}
+    \label{subsec:lco3}
+
+    LC-O3~\cite{Beau2026lco3} resolves the saturation-boundary question.
+    The quadratic capacity identity $B_n^2 + (F_n^\tau)^2 = 1$ is not corrected: it is exact
+    whenever $B_n$ is the exact finite-$q$ torus load.
+    The correction concerns only the pre-saturation Carnot parabolic identification
+    $B_n^{\mathrm{parab}} = (2n^2+2n+1)/q^2$.
+
+    Setting $R = (q-1)/2$ for odd prime $q$, the exact torus load satisfies
+    \[
+      B_n^{\mathrm{torus}} = B_n^{\mathrm{parab}} \quad (n \leq R),
+      \qquad
+      B_n^{\mathrm{torus}} = B_n^{\mathrm{parab}} - \frac{4m^2}{q^2} \quad (n = R+m).
+    \]
+    The parabolic identification is asymptotically exact for $m/q \to 0$ and has a finite
+    limit $\Delta_q \to 4(\alpha - 1/2)^2$ in the macroscopic folded regime $n/q \to \alpha >
+  1/2$.
+    Thus LC-O3 establishes the domain in which continuum Carnot estimates are valid, without
+    weakening the quadratic capacity law.
+
+  \section{Inputs and Outputs}
+  \label{sec:deps}
+
+  \subsection{Upstream inputs}
+
+    The sub-programme depends on three upstream results.
+
+    \textit{Born--Infeld admissibility budget}~\cite{Beau2026c,Beau2026m}.
+    The local admissibility constraint gives the unit capacity form $(F^\tau)^2 + \beta^2 = 1$.
+    Its role is to constrain admissible capacity splittings, not to supply a Lorentzian metric.
+
+    \textit{Projective temporal ordering}~\cite{Beau2026pto}.
+    The observable $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ supplies a
+    non-decreasing temporal proxy.
+    The sub-programme interprets $d\tau/dn = F^\tau$ as the effective clock-rate factor.
+
+    \textit{Q5b--Q11 metric closure}~\cite{Beau2026q5b,Beau2026q11}.
+    The geometric branch supplies the completed homogeneous co-metric $g^{\mu\nu} = 2\eta^{\mu\nu}$.
+    This is the point at which Lorentzian geometry enters.
+    The Lorentz group acts as the isometry group of this effective interval.
+
+  \subsection{Downstream outputs}
+
+    The sub-programme provides three outputs.
+
+    \textit{Special-relativistic kinematics.}
+    Time dilation ($d\tau/dn = 1/\gamma$), the light cone ($B = 1 \Rightarrow F^\tau = 0$),
+    Lorentz boosts $\Lambda(\beta)$, and length contraction ($\ell = \ell_0/\gamma$) are all
+    reconstructed from projective capacity data and the effective metric closure.
+
+    \textit{Local gravitational capacity lapse.}
+    The identity $R(x)^2 = 1-\epsilon(x) = -2g^{\tau\tau}(x)$ provides a capacity-side reading
+    of gravitational time dilation, derived from admissibility-weight reduction before any use of
+    the Einstein equation.
+
+    \textit{Finite-$q$ control.}
+    The exact correction $\Delta_q(n) = 4m^2/q^2$ controls the domain in which continuum Carnot
+    estimates of the spatial load can be trusted.
+
+  \section{Status}
+  \label{sec:status}
+
+  Table~\ref{tab:status} summarises the logical status of each paper.
+
+  \begin{table}[h]
+    \centering
+    \caption{Logical status of the Lorentz-capacity sub-programme.}
+    \label{tab:status}
+    \smallskip
+    \footnotesize
+    \begin{tabular}{llp{4.5cm}p{4cm}}
+      \toprule
+      Label & Paper & Main result & Status \\
+      \midrule
+      LorCap & \cite{Beau2026n} & Lorentz mobility from projective capacity
+      & proved (cond.\ on $[U]$) \\
+      TempProj & \cite{Beau2026tp} & $F^\tau_n = \sqrt{1-B_n^2}$, time dilation
+      & proved (cond.\ on $[U]$) \\
+      LCII & \cite{Beau2026lco2} & Fibrewise lapse $R(x)^2 = 1-\epsilon(x)$
+      & structural; bridge closed by LC-O2-O1 \\
+      LC-O1 & \cite{Beau2026lco1} & Lorentz boost; length contraction
+      & proved \\
+      LC-O2-O1 & \cite{Beau2026lco2o1} & capacity--metric bridge $R(x)^2 = -2g^{\tau\tau}(x)$
+      & proved \\
+      LC-O3 & \cite{Beau2026lco3} & Finite-$q$ correction $\Delta_q = 4m^2/q^2$
+      & proved \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+
+  The sole remaining qualification is scope: the Lorentzian metric is inherited from Q5b--Q11,
+  and the Born--Infeld capacity relation from the admissibility budget.
+  No structural open problem remains inside the Lorentz-capacity sub-programme.
+
+  \begin{remark}[Scope of the residual]
+LC-O2-O1 proves the local identity $R(x)^2 = 1-\epsilon(x) = -2g^{\tau\tau}(x)$; it does
+not derive the Einstein field equations.
+The dynamical equation $G_{\mu\nu} = 8\pi G_N T_{\mu\nu}$ belongs to the spectral entropy
+and gravity branch of the programme.
+The relation $\epsilon(x)$ to specific matter sectors is a cross-branch question, not an
+internal open problem of the LC sub-programme.
+  \end{remark}
+
+  \section{Conclusion}
+  \label{sec:conclusion}
+
+  The Lorentz-capacity sub-programme establishes the projective origin of the Lorentz
+  factor in Cosmochrony.
+  The essential result is the chain
+  \begin{align*}
+    &\text{BI budget}
+    \;\to\;
+    F^\tau = \tfrac{1}{\gamma}
+    \;\to\;
+    g^{\mu\nu} = 2\eta^{\mu\nu}
+    \;\to\;
+    \Lambda(\beta)\\
+    &\qquad\to\;
+    R(x)^2 = 1-\epsilon(x)
+    \;\to\;
+    \text{finite-}q\text{ domain.}
+  \end{align*}
+
+  The Born--Infeld capacity sphere supplies the projective load $\beta$ and the residual clock
+  factor $1/\gamma$.
+  The Q5b--Q11 geometric closure supplies the Lorentzian interval.
+  LC-O1 reconstructs Lorentz boosts and length contraction as isometries of that interval.
+  LC-O2-O1 closes the local capacity--metric bridge spectrally, without importing the Einstein
+  equation.
+  LC-O3 proves that finite-$q$ corrections affect the Carnot parabolic identification, not the
+  quadratic capacity law.
+
+  In this sense, the Lorentz factor is not postulated: it is the temporal residual of a bounded
+  admissible projection.
+  The Lorentz group is not imposed on the capacity sphere: it is the isometry group of the
+  effective metric reconstructed from admissibility.
+  The Lorentz-capacity sub-programme is therefore complete as a structural bridge between
+  projective temporal ordering and relativistic kinematics.
+
+  \bibliographystyle{plain}
+  \bibliography{cosmochrony-bibliography}
+
+\end{document}
