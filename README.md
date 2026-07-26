@@ -42,7 +42,7 @@ A central organising distinction runs through the whole sub-programme:
 | TempProj | `Beau2026tp` | Temporal residual map $F^\tau_n = \sqrt{1 - B_n^2}$; time dilation, light cone |
 | LCII | `Beau2026lco2` | Fibrewise local lapse $R(x)^2 = 1 - \epsilon(x)$ |
 | LC-O1 | `Beau2026lco1` | Lorentz boost $\Lambda(\beta)$; length contraction $\ell = \ell_0/\gamma$ |
-| LC-O2-O1 | `Beau2026lco2o1` | Spectral closure of the bridge $R(x)^2 = -2g^{\tau\tau}(x)$ |
+| LC-O2-O1 | `Beau2026lco2o1` | **No-go**: the free-fraction law does not close the bridge; LC-O2-O1 reopened |
 | LC-O3 | `Beau2026lco3` | Finite-$q$ correction $\Delta_q(n) = 4m^2/q^2$ to the Carnot identification |
 
 ## Outputs
@@ -51,27 +51,27 @@ A central organising distinction runs through the whole sub-programme:
   the light cone ($B = 1 \Rightarrow F^\tau = 0$), Lorentz boosts, and length
   contraction, all reconstructed from projective capacity and the effective
   metric closure.
-- **Local gravitational capacity lapse**: the identity
-  $R(x)^2 = 1 - \epsilon(x) = -2g^{\tau\tau}(x)$ gives a capacity-side reading of
-  gravitational time dilation, derived from admissibility-weight reduction
-  **without** any use of the Einstein equation.
+- **Local gravitational capacity lapse**: LCII supplies the parallel structural
+  definitions $R(x)^2 = 1 - \epsilon(x)$ and $R(x)^2 = -2g_{\tau\tau}(x)$.
+  Their equivalence gives a capacity-side reading of gravitational time dilation
+  in the Einstein regime, but its derivation from admissibility remains open.
 - **Finite-$q$ control**: the exact correction $\Delta_q(n) = 4m^2/q^2$ bounds
   the domain in which continuum Carnot estimates of the spatial load are valid.
 
 ## Status
 
-No structural open problem remains inside the Lorentz-capacity sub-programme.
-The Lorentzian metric is inherited from Q5b-Q11 and the Born-Infeld capacity
-relation from the admissibility budget; both qualifications are scope, not open
-problems.
+The inertial kinematic chain is complete.
+The non-homogeneous capacity-metric identification remains open.
+The Lorentzian metric is inherited from Q5b-Q11, while the Born-Infeld capacity
+relation comes from the admissibility budget.
 
 | Label | Status |
 |-------|--------|
 | LorCap | proved (conditional on $[U]$) |
 | TempProj | proved (conditional on $[U]$) |
-| LCII | structural; bridge closed by LC-O2-O1 |
+| LCII | structural; capacity-metric bridge **open** (declared postulate, Remark 3.2) |
 | LC-O1 | proved |
-| LC-O2-O1 | proved |
+| LC-O2-O1 | proved no-go; bridge reopened |
 | LC-O3 | proved |
 
 ## Upstream Dependencies
