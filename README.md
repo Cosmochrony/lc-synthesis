@@ -49,7 +49,7 @@ A central organising distinction runs through the whole sub-programme:
 
 ## Outputs
 
-- **Special-relativistic kinematics**: time dilation ($d\tau/dn = 1/\gamma$),
+- **Special-relativistic kinematics**: time dilation (proper-time rate $1/\gamma$ under [H-cone]),
   the light cone ($B = 1 \Rightarrow F^\tau = 0$), Lorentz boosts, and length
   contraction, all reconstructed from projective capacity, a supplied co-metric and [H-cone].
 - **Local gravitational capacity lapse**: LCII supplies the parallel structural
@@ -80,7 +80,7 @@ relation comes from the quadratic budget hypothesis.
 | Paper | Role |
 |-------|------|
 | Born-Infeld capacity bound (`Beau2026c`) | [A-cap]; the unit capacity form $(F^\tau)^2 + \beta^2 = 1$ is the quadratic budget hypothesis of LorCap |
-| Projective temporal ordering (`Beau2026pto`) | Non-decreasing temporal proxy $d\tau/dn = F^\tau$ |
+| Projective temporal ordering (`Beau2026pto`) | Non-decreasing temporal proxy; no step and no coefficient |
 | Supplied co-metric (`Beau2026q5b`, `BeauQ8`, `Beau2026q11`) | Conditional form $\mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$; coefficients free |
 | [H-cone] | Light-cone speed equal to the Born-Infeld bound per ordering step (Q11-O1; assumed) |
 

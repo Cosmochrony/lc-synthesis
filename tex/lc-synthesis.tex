@@ -29,7 +29,8 @@
     The Lorentz-capacity sub-programme answers a specific question in the Cosmochrony
     framework: where does the Lorentz factor $\gamma$ come from, if spacetime geometry is not
     assumed as fundamental?
-    The answer is that $\gamma$ is not introduced as a kinematic postulate.
+    The answer is that $\gamma$ need not be introduced as a kinematic postulate, at the price of one named kinematic
+    hypothesis.
     It is reconstructed from the bounded Born--Infeld capacity budget of admissible projection,
     then read in the observer-transform structure of special relativity through a supplied Lorentzian co-metric.
     That co-metric has the conditional form of Q11, $\mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$, with two
@@ -60,7 +61,7 @@
     LCII extends the construction to the fibrewise non-homogeneous
     regime.
     LC-O1 reconstructs Lorentz transformations and length
-    contraction.
+    contraction, conditionally on a supplied co-metric and on [H-cone].
     LC-O2-O1 establishes a no-go for the scalar free-fraction
     reduction of the local capacity--metric bridge, which therefore remains open.
     LC-O3 identifies the exact finite-$q$ domain of validity of the
@@ -147,18 +148,19 @@
       \begin{tabular}{ccccccccc}
         BI budget & $\to$ & $F^\tau=1/\gamma$ & $\to$ & $g\propto\eta$, [H-cone]
         & $\to$ & $\Lambda(\beta)$ & $\to$ & $R(x)^2=1-\epsilon(x)$\\
-        \cite{Beau2026c} & &
+        \cite{Beau2026n} & &
         \cite{Beau2026n,Beau2026tp} & &
-        \cite{Beau2026q5b,Beau2026q11} & &
+        \cite{Beau2026q11,Beau2026tp} & &
         \cite{Beau2026lco1} & &
         \cite{Beau2026lco2,Beau2026lco2o1}\\[6pt]
         \multicolumn{7}{c}{} & $\to$ & finite-$q$ \\
         \multicolumn{7}{c}{} & & \cite{Beau2026lco3}
       \end{tabular}
       \caption{The Lorentz-capacity chain.
-      Each node cites the paper(s) that state it; the co-metric is supplied under the hypotheses of Q11
-      Corollary~6.1, the arrow to $\Lambda(\beta)$ uses [H-cone], and the arrow to $R(x)^2 = 1-\epsilon(x)$ is a
-      declared postulate.
+      Each node cites the paper(s) that state it: the quadratic budget is a hypothesis of LorCap expressing the bound
+      [A-cap] of~\cite{Beau2026c}; the co-metric form is that of Q11 Corollary~6.1, supplied under its hypotheses,
+      and [H-cone] is the hypothesis of TempProj, which names the coupling datum Q11-O1; the arrow to
+      $R(x)^2 = 1-\epsilon(x)$ is a declared postulate.
       The capacity sphere (left) and the effective metric (centre) are independent inputs;
       the Lorentz group acts on the metric, not on the sphere.}
       \label{fig:chain}
@@ -193,7 +195,8 @@
       Once the metric is available, an inertial observer is a unit timelike splitting of the
       effective interval.
       Under [H-cone], the Lorentz boost $\Lambda(\beta)$ is the unique proper orthochronous isometry mapping one
-      splitting to another at capacity load $\beta$, established in~\cite{Beau2026lco1}.
+      splitting to another at capacity load $\beta$ and fixing the transverse directions, established on the tangent
+      space in~\cite{Beau2026lco1}.
 
     \paragraph{Homogeneous capacity to local lapse.}
       The non-homogeneous extension introduces a local occupancy $\epsilon(x)$ and a residual
@@ -209,8 +212,8 @@
       The quadratic identity $B_n^2 + (F_n^\tau)^2 = 1$ is exact when $B_n$ is the exact torus
       load.
       Paper~\cite{Beau2026lco3} identifies the correction $\Delta_q(n) = 4m^2/q^2$ between the
-      exact torus count and the Carnot parabolic approximation, and establishes the domain $n \leq
-  R := (q-1)/2$ in which the approximation is valid.
+      exact torus count and the Carnot parabolic approximation, and establishes that the approximation is exact for
+      $n \leq R := (q-1)/2$ and asymptotically valid for $n = R + o(q)$.
 
   \section{Paper-by-Paper Synthesis}
   \label{sec:papers}
@@ -242,7 +245,8 @@
     \[
       P^{Q5b}_\tau\,\Sigma^{\mathrm{tot}}_n = \sqrt{1-B_n^2} = F^\tau_n.
     \]
-    Under [H-cone] this gives time dilation ($d\tau/dn = F^\tau_n = 1/\gamma$) and the light cone
+    Under [H-cone] this gives time dilation, the proper time of an observer at load $\beta$ advancing at the rate
+    $F^\tau_n = 1/\gamma$ relative to the rescaled ordering coordinate, and the light cone
     ($B_n = 1 \Rightarrow F^\tau_n = 0$).
     TempProj thereby shows, under its stated hypotheses, that the Lorentz factor can be read as the temporal
     residual of a bounded projective capacity budget.
@@ -285,12 +289,12 @@
 
     An inertial observer is a future-directed unit timelike vector $u$ satisfying $\eta(u,u) =
   -1$, together with its simultaneity hyperplane $\Sigma_u = \{X \mid \eta(X,u) = 0\}$.
-    The unique proper orthochronous isometry of $\eta$ mapping the rest splitting $u_0 =
-  \partial_\tau$ to the moving splitting
+    The unique proper orthochronous isometry of $\eta$ fixing the transverse directions and mapping the rest
+    splitting $u_0 = \partial_\tau$ to the moving splitting
     \[
       u_\beta = \gamma(\partial_\tau + \beta\,\partial_x), \qquad \gamma = (1-\beta^2)^{-1/2},
     \]
-    is the Lorentz boost
+    is, on the tangent space, the Lorentz boost
     \[
       \tau' = \gamma(\tau - \beta x), \qquad x' = \gamma(x - \beta\tau).
     \]
@@ -351,7 +355,7 @@
 
   \subsection{Upstream inputs}
 
-    The sub-programme depends on three upstream results.
+    The sub-programme depends on four upstream inputs.
 
     \textit{Born--Infeld capacity bound}~\cite{Beau2026c}.
     The quadratic budget hypothesis of~\cite{Beau2026n}, which expresses the bound [A-cap], gives the unit capacity
@@ -361,7 +365,7 @@
     \textit{Projective temporal ordering}~\cite{Beau2026pto}.
     The observable $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ supplies a
     non-decreasing temporal proxy.
-    The sub-programme interprets $d\tau/dn = F^\tau$ as the effective clock-rate factor.
+    It supplies no step and no coefficient; the clock-rate reading of $F^\tau$ is that of TempProj, under [H-cone].
 
     \textit{Supplied co-metric}~\cite{Beau2026q5b,BeauQ8,Beau2026q11}.
     The geometric branch gives the form, not the co-metric: Q5b a rank-three co-metric under [H-L] and [H-lift],
@@ -379,7 +383,7 @@
     The sub-programme provides three outputs.
 
     \textit{Special-relativistic kinematics.}
-    Time dilation ($d\tau/dn = 1/\gamma$), the light cone ($B = 1 \Rightarrow F^\tau = 0$),
+    Time dilation (proper-time rate $1/\gamma$), the light cone ($B = 1 \Rightarrow F^\tau = 0$),
     Lorentz boosts $\Lambda(\beta)$, and length contraction ($\ell = \ell_0/\gamma$) are all
     reconstructed from projective capacity data, a supplied co-metric and [H-cone].
 
