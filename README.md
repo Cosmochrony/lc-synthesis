@@ -11,17 +11,18 @@ question of the Cosmochrony framework: **where does the Lorentz factor
 $\gamma = (1 - \beta^2)^{-1/2}$ come from, if Lorentzian geometry is not assumed
 as fundamental?**
 
-The answer is that $\gamma$ is not a kinematic postulate. It is reconstructed
-from the bounded Born-Infeld capacity budget of admissible projection, then
-lifted to the observer-transform structure of special relativity through the
-effective Lorentzian co-metric established in the geometric branch of the
-programme. This paper synthesises the six constituent papers and exhibits the
-single completed chain that links them.
+The answer is that $\gamma$ is read as the temporal residual of the bounded Born-Infeld capacity budget of
+admissible projection, then placed in the observer-transform structure of special relativity through a
+supplied Lorentzian co-metric of the conditional form of Q11,
+$g^{\mu\nu} = \mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$, whose two coefficients are independent and
+fixed by no source. The link is one named hypothesis, **[H-cone]**: the light-cone speed of the co-metric
+equals the Born-Infeld bound per ordering step, the coupling datum that Q11 leaves open. This paper
+synthesises the six constituent papers and exhibits the conditional chain that links them.
 
 ## The Structural Chain
 
 $$\text{BI budget} \;\to\; F^\tau = \tfrac{1}{\gamma} \;\to\;
-g^{\mu\nu} = 2\eta^{\mu\nu} \;\to\; \Lambda(\beta) \;\to\;
+g^{\mu\nu} \propto \eta^{\mu\nu}\ \text{and [H-cone]} \;\to\; \Lambda(\beta) \;\to\;
 R(x)^2 = 1 - \epsilon(x) \;\to\; \text{finite-}q\text{ domain.}$$
 
 A central organising distinction runs through the whole sub-programme:
@@ -30,9 +31,10 @@ A central organising distinction runs through the whole sub-programme:
   norm constraint in capacity space. It supplies the projective load $\beta$ and
   the residual clock factor $F^\tau = \sqrt{1 - \beta^2} = 1/\gamma$. It is
   **not** the Minkowski interval.
-- The **effective Lorentzian metric** $g^{\mu\nu} = 2\eta^{\mu\nu}$ is supplied
-  separately by the Q5b-Q11 geometric closure. The Lorentz group is the isometry
-  group of this metric, **not** the symmetry group of the capacity sphere.
+- The **effective Lorentzian metric** is supplied separately, in the conditional form of Q11; after a
+  rescaling of $\tau$ it is proportional to $\eta$, and the normalisation $g^{\mu\nu} = 2\eta^{\mu\nu}$ is a
+  choice of units. The Lorentz group is the isometry group of this metric, **not** the symmetry group of the
+  capacity sphere.
 
 ## Constituent Papers
 
@@ -42,17 +44,16 @@ A central organising distinction runs through the whole sub-programme:
 | TempProj | `Beau2026tp` | Temporal residual map $F^\tau_n = \sqrt{1 - B_n^2}$; time dilation, light cone |
 | LCII | `Beau2026lco2` | Fibrewise local lapse $R(x)^2 = 1 - \epsilon(x)$ |
 | LC-O1 | `Beau2026lco1` | Lorentz boost $\Lambda(\beta)$; length contraction $\ell = \ell_0/\gamma$ |
-| LC-O2-O1 | `Beau2026lco2o1` | **No-go**: the free-fraction law does not close the bridge; LC-O2-O1 reopened |
+| LC-O2-O1 | `Beau2026lco2o1` | **No-go**: the free-fraction law does not close the bridge, for any postulated $A_\tau^\infty$; LC-O2-O1 open |
 | LC-O3 | `Beau2026lco3` | Finite-$q$ correction $\Delta_q(n) = 4m^2/q^2$ to the Carnot identification |
 
 ## Outputs
 
 - **Special-relativistic kinematics**: time dilation ($d\tau/dn = 1/\gamma$),
   the light cone ($B = 1 \Rightarrow F^\tau = 0$), Lorentz boosts, and length
-  contraction, all reconstructed from projective capacity and the effective
-  metric closure.
+  contraction, all reconstructed from projective capacity, a supplied co-metric and [H-cone].
 - **Local gravitational capacity lapse**: LCII supplies the parallel structural
-  definitions $R(x)^2 = 1 - \epsilon(x)$ and $R(x)^2 = -2g_{\tau\tau}(x)$.
+  definitions $R(x)^2 = 1 - \epsilon(x)$ and $R(x)^2 = g_{\tau\tau}(x)/g_{\tau\tau}^\infty$.
   Their equivalence gives a capacity-side reading of gravitational time dilation
   in the Einstein regime, but its derivation from admissibility remains open.
 - **Finite-$q$ control**: the exact correction $\Delta_q(n) = 4m^2/q^2$ bounds
@@ -60,27 +61,28 @@ A central organising distinction runs through the whole sub-programme:
 
 ## Status
 
-The inertial kinematic chain is complete.
+The inertial kinematic chain is complete conditionally on a supplied co-metric and on [H-cone].
 The non-homogeneous capacity-metric identification remains open.
-The Lorentzian metric is inherited from Q5b-Q11, while the Born-Infeld capacity
-relation comes from the admissibility budget.
+The Lorentzian co-metric is supplied in the conditional form of Q11, while the Born-Infeld capacity
+relation comes from the quadratic budget hypothesis.
 
 | Label | Status |
 |-------|--------|
-| LorCap | proved (conditional on $[U]$) |
-| TempProj | proved (conditional on $[U]$) |
+| LorCap | conditional on the quadratic budget and the convergence lemma; kinematic reading under [H-cone] |
+| TempProj | proved under a supplied co-metric, the identification of $B_n$ and the BI lift; time dilation under [H-cone] |
 | LCII | structural; capacity-metric bridge **open** (declared postulate, Remark 3.2) |
-| LC-O1 | proved |
-| LC-O2-O1 | proved no-go; bridge reopened |
+| LC-O1 | proved for $\eta$; observer reading under a supplied co-metric and [H-cone] |
+| LC-O2-O1 | proved no-go; bridge open |
 | LC-O3 | proved |
 
 ## Upstream Dependencies
 
 | Paper | Role |
 |-------|------|
-| Born-Infeld admissibility (`Beau2026c`, `Beau2026m`) | Unit capacity form $(F^\tau)^2 + \beta^2 = 1$ |
+| Born-Infeld capacity bound (`Beau2026c`) | [A-cap]; the unit capacity form $(F^\tau)^2 + \beta^2 = 1$ is the quadratic budget hypothesis of LorCap |
 | Projective temporal ordering (`Beau2026pto`) | Non-decreasing temporal proxy $d\tau/dn = F^\tau$ |
-| Q5b-Q11 metric closure (`Beau2026q5b`, `Beau2026q11`) | Effective co-metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ |
+| Supplied co-metric (`Beau2026q5b`, `BeauQ8`, `Beau2026q11`) | Conditional form $\mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$; coefficients free |
+| [H-cone] | Light-cone speed equal to the Born-Infeld bound per ordering step (Q11-O1; assumed) |
 
 ## Repository Contents
 
