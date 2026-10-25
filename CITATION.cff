@@ -1,4 +1,6 @@
 cff-version: 1.2.0
+version: "2.2"
+date-released: 2026-10-25
 message: "If you cite this work, please use the metadata from this file."
 title: "The Lorentz-Capacity Sub-Programme Projective Origin of the Lorentz Factor in the Cosmochrony Programme"
 type: software
@@ -7,7 +9,6 @@ authors:
     given-names: "Jérôme"
 repository-code: "https://github.com/Cosmochrony/lc-synthesis"
 url: "https://cosmochrony.org/science/lc/"
-version: "2.1"
 doi: "10.5281/zenodo.20386737"
 license: "CC-BY-4.0"
 preferred-citation:
