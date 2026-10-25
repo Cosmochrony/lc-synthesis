@@ -367,8 +367,10 @@
     Its role is to constrain admissible capacity splittings, not to supply a Lorentzian metric.
 
     \textit{Projective temporal ordering}~\cite{Beau2026pto}.
-    The observable $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ supplies a
-    non-decreasing temporal proxy.
+    The observable $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ supplies a candidate
+    temporal proxy along a trajectory, supported numerically only within a tolerance
+    ($I(n+1)-I(n) \geq -10^{-6} I_{\max}$ after burn-in, for the tested primes); exact monotonicity is
+    conjectural, and an order on states requires the acyclicity hypothesis [H-acyc]~\cite{Beau2026m}.
     It supplies no step and no coefficient; the clock-rate reading of $F^\tau$ is that of TempProj, under [H-cone].
 
     \textit{Supplied co-metric}~\cite{Beau2026q5b,BeauQ8,Beau2026q11}.

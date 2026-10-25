@@ -80,7 +80,7 @@ relation comes from the quadratic budget hypothesis.
 | Paper | Role |
 |-------|------|
 | Born-Infeld capacity bound (`Beau2026c`) | [A-cap]; the unit capacity form $(F^\tau)^2 + \beta^2 = 1$ is the quadratic budget hypothesis of LorCap |
-| Projective temporal ordering (`Beau2026pto`) | Non-decreasing temporal proxy; no step and no coefficient |
+| Projective temporal ordering (`Beau2026pto`) | Candidate trajectory proxy, numerically non-decreasing within tolerance; exact monotonicity conjectural; state order needs [H-acyc]; no step and no coefficient |
 | Supplied co-metric (`Beau2026q5b`, `BeauQ8`, `Beau2026q11`) | Conditional form $\mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$; coefficients free |
 | [H-cone] | Light-cone speed equal to the Born-Infeld bound per ordering step (Q11-O1; assumed) |
 
