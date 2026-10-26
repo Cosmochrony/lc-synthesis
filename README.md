@@ -41,7 +41,7 @@ A central organising distinction runs through the whole sub-programme:
 | Label | Key | Main result |
 |-------|-----|-------------|
 | LorCap | `Beau2026n` | Lorentz mobility from projective capacity; $F^\tau = 1/\gamma$ |
-| TempProj | `Beau2026tp` | Temporal residual map $F^\tau_n = \sqrt{1 - B_n^2}$; time dilation, light cone |
+| TempProj | `Beau2026tp` | Temporal residual map $F^\tau_n = \sqrt{1 - B_n^2}$: values fixed by the BI sphere and the Weil filling law, identified as temporal by the splitting; time dilation under [H-cone] |
 | LCII | `Beau2026lco2` | Fibrewise local lapse $R(x)^2 = 1 - \epsilon(x)$ |
 | LC-O1 | `Beau2026lco1` | Lorentz boost $\Lambda(\beta)$; length contraction $\ell = \ell_0/\gamma$ |
 | LC-O2-O1 | `Beau2026lco2o1` | **No-go**: the free-fraction law does not close the bridge, for any postulated $A_\tau^\infty$; LC-O2-O1 open |
@@ -50,7 +50,7 @@ A central organising distinction runs through the whole sub-programme:
 ## Outputs
 
 - **Special-relativistic kinematics**: time dilation (proper-time rate $1/\gamma$ under [H-cone]),
-  the light cone ($B = 1 \Rightarrow F^\tau = 0$), Lorentz boosts, and length
+  the light cone ($B = 1 \Rightarrow F^\tau = 0$, reached by the exact torus load of LC-O3), Lorentz boosts, and length
   contraction, all reconstructed from projective capacity, a supplied co-metric and [H-cone].
 - **Local gravitational capacity lapse**: LCII supplies the parallel structural
   definitions $R(x)^2 = 1 - \epsilon(x)$ and $R(x)^2 = g_{\tau\tau}(x)/g_{\tau\tau}^\infty$.

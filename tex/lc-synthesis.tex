@@ -23,7 +23,7 @@
 \author{J\'er\^ome Beau\\[2pt]
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
-\date{25 October 2026, Version 2.2}
+\date{26 October 2026, Version 2.3}
 
 \begin{document}
 
@@ -241,17 +241,23 @@
   \subsection{TempProj: the temporal residual map~\texorpdfstring{\cite{Beau2026tp}}{}}
     \label{subsec:temproj}
 
-    TempProj~\cite{Beau2026tp} constructs the temporal residual map as the unique positive
-    function compatible with three inputs: the Lorentzian splitting of a supplied co-metric, the Born--Infeld
-    unit capacity sphere, and the exact Weil filling law $\Sigma^{\mathrm{tot}}_n = 1-B_n$, under an identification
-    of $B_n$ with the spatial capacity flow stated there.
+    TempProj~\cite{Beau2026tp} constructs the temporal residual map from three inputs that play different
+    roles: the Born--Infeld unit capacity sphere, the exact Weil filling law $\Sigma^{\mathrm{tot}}_n = 1-B_n$, and
+    the temporal splitting of a supplied co-metric, under an identification of $B_n$ with the spatial capacity
+    flow stated there.
+    The quadratic law and the filling law alone fix the values of the map at the attained values of
+    $\Sigma^{\mathrm{tot}}_n$, a finite set for depths $n \le (q-1)/2$; the splitting identifies that value as the
+    temporal component of the capacity flow and does not select it; the signature of the co-metric enters only
+    the kinematic reading.
     The result is
     \[
       P^{Q5b}_\tau\,\Sigma^{\mathrm{tot}}_n = \sqrt{1-B_n^2} = F^\tau_n.
     \]
-    Under [H-cone] this gives time dilation, the proper time of an observer at load $\beta$ advancing at the rate
-    $F^\tau_n = 1/\gamma$ relative to the rescaled ordering coordinate, and the light cone
-    ($B_n = 1 \Rightarrow F^\tau_n = 0$).
+    Under [H-cone], with the Lorentzian signature of the co-metric, this gives time dilation, the proper time of
+    an observer at load $\beta$ advancing at the rate $F^\tau_n = 1/\gamma$ relative to the rescaled ordering
+    coordinate, and the light cone ($B = 1 \Rightarrow F^\tau = 0$ on the unit sphere).
+    In the domain of TempProj the load stays below $B_R = 1/2 + 1/(2q^2)$; the value $B = 1$ is reached by the
+    exact torus load of LC-O3 (Section~\ref{subsec:lco3}).
     TempProj thereby shows, under its stated hypotheses, that the Lorentz factor can be read as the temporal
     residual of a bounded projective capacity budget.
     The reconstruction of the full transformation between inertial observers is the role of
@@ -389,7 +395,8 @@
     The sub-programme provides three outputs.
 
     \textit{Special-relativistic kinematics.}
-    Time dilation (proper-time rate $1/\gamma$), the light cone ($B = 1 \Rightarrow F^\tau = 0$),
+    Time dilation (proper-time rate $1/\gamma$), the light cone ($B = 1 \Rightarrow F^\tau = 0$, reached by the
+    exact torus load of LC-O3),
     Lorentz boosts $\Lambda(\beta)$, and length contraction ($\ell = \ell_0/\gamma$) are all
     reconstructed from projective capacity data, a supplied co-metric and [H-cone].
 
