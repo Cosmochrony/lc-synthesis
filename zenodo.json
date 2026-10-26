@@ -4,5 +4,6 @@
   "main_tex": "tex/lc-synthesis.tex",
   "publication_type": "workingpaper",
   "zenodo_id": 20386737,
-  "doi": "10.5281/zenodo.20386737"
+  "doi": "10.5281/zenodo.20386737",
+  "notes": "Version 2.3 aligns the TempProj section with TempProj 1.5: scalar uniqueness from the Born-Infeld sphere and the Weil filling law at the attained values only, identification of the temporal component by the splitting, and a Lorentzian kinematic reading that uses the signature and [H-cone]; the light cone B = 1 is reached by the exact torus load of LC-O3."
 }
